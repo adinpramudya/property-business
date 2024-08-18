@@ -26,7 +26,7 @@ const CardProperties: FC<CardPropertiesProps> = ({
   price,
 }) => {
   return (
-    <div className="border border-grey-shades-15 p-8 rounded-md mt-10">
+    <div className="border border-grey-shades-15 p-8 rounded-md mt-10 w-full lg:max-w-[390px]">
       <div className="flex flex-col">
         <Image
           className="w-full rounded-md object-cover"
@@ -37,7 +37,7 @@ const CardProperties: FC<CardPropertiesProps> = ({
         />
         <h1 className="font-bold text-lg my-2">{title}</h1>
         <p className="font-sm text-grey-shades-60">{description}</p>
-        <div className="flex justify-between mt-4">
+        <div className="flex flex-wrap gap-3 justify-between mt-4">
           <Chip
             className="text-sm text-white bg-grey-shades-10 border border-grey-shades-15"
             startContent={<IoBedOutline size={18} />}
@@ -60,14 +60,14 @@ const CardProperties: FC<CardPropertiesProps> = ({
             Villa
           </Chip>
         </div>
-        <div className="flex justify-between mt-6">
-          <div className="flex flex-col">
-            <p className="font-semibold text-sm  bg-transparent mb-1 text-grey-shades-60">
+        <div className="lg:flex justify-between mt-6">
+          <div className="flex flex-wrap flex-row lg:flex-col justify-between mb-3 lg:mb-0">
+            <p className="font-semibold text-sm bg-transparent mb-1 text-grey-shades-60">
               Price
             </p>
             <p className="font-bold"> $ {price}</p>
           </div>
-          <Button className="bg-purple-shades-60 text-white px-4 py-2 rounded-md font-medium">
+          <Button className="bg-purple-shades-60 text-white px-4 py-2 rounded-md font-medium w-full lg:w-1/2">
             View Properties Details
           </Button>
         </div>

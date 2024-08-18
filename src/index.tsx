@@ -70,3 +70,47 @@ export const CardFeaturedData = [
     price: 170000,
   },
 ];
+
+export const CardTestimonials = [
+  {
+    title: "Exceptional Service!",
+    rate: 3.5,
+    description:
+      "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+  },
+  {
+    title: "Efficient and Reliable",
+    rate: 4,
+    description:
+      "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+  },
+  {
+    title: "Trusted Advisor",
+    rate: 5,
+    description:
+      "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+  },
+];
+
+export const Faqs = [
+  {
+    question: "How long does it usually take to find a property?",
+    answer:
+      "It usually takes 2-4 weeks for Estatein to find a suitable property that matches your criteria. However, we encourage you to reach out to us early if you're unsure about the properties available.",
+    detailId: 1,
+  },
+  {
+    question:
+      "What are the fees associated with purchasing a property through Estatein?",
+    answer:
+      "The fees associated with purchasing a property through Estatein can vary depending on your needs and preferences. However, we recommend checking with our agents for the most accurate information.",
+    detailId: 2,
+  },
+  {
+    question:
+      "What are the key factors to consider when choosing a property for sale?",
+    answer:
+      "Some key factors to consider when choosing a property for sale include its location, size, price, and quality. Estatein helps you find properties that cater to your budget, needs, and preferences.",
+    detailId: 3,
+  },
+];

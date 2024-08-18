@@ -5,12 +5,13 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|chip|input|popover|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(button|chip|input|popover|user|ripple|spinner|avatar).js",
   ],
   theme: {
     extend: {
       backgroundImage: {
         "img-advertisement": "url('/img/Abstract Design.svg')",
+        "img-promotion": "url('/img/CTA.png')",
       },
       colors: {
         "purple-shades": {

@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-shadow {
+  @apply shadow-[0px_0px_24px_9px_rgba(153,153,153,0.75)];
+}

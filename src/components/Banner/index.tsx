@@ -21,7 +21,7 @@ const Banner: FC<BannerProps> = ({}) => {
         <h1 className="text-4xl text-left">
           Discover Your Dream Property With Estatein
         </h1>
-        <p className="text-sm text-grey-shades-60 pt-6">
+        <p className="text-base text-grey-shades-60 pt-6">
           Your journey to finding the perfect property begins here. Explore our
           listings to find the home that matches your dreams.
         </p>
@@ -33,9 +33,12 @@ const Banner: FC<BannerProps> = ({}) => {
             Browse Properties
           </Button>
         </div>
-        <div className="flex-col lg:flex-row flex justify-between pt-10">
+        <div className="flex flex-wrap lg:flex-nowrap lg:flex-row gap-1 box-border justify-between pt-10">
           {CardBannerData.map((item, index) => (
             <CardBanner
+              className={`${
+                index === 2 ? "w-full" : "w-[calc(50%-0.25rem)] lg:w-full"
+              }`}
               key={index}
               count={item.count}
               description={item.description}
@@ -43,8 +46,8 @@ const Banner: FC<BannerProps> = ({}) => {
           ))}
         </div>
       </div>
-      <div className="lg:w-1/2 hidden lg:block">
-        <Image src="/img/banner.png" width={920} height={814} alt="banner" />
+      <div className="lg:w-1/2 hidden lg:mr-auto lg:block">
+        <Image src="/img/banner.png" width={950} height={814} alt="banner" />
       </div>
     </div>
   );
